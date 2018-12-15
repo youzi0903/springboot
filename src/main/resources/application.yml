@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+        username: light
+        password: admin
+
+mybatis:
+  # 映射文件所在路径
+  mapper-locations: classpath:mappers/*.xml
+  # pojo类所在包路径
+  type-aliases-package: com.hsbc.springboot.model
